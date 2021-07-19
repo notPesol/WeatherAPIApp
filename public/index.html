@@ -13,20 +13,34 @@
     <div class="container">
         <h1>Weather App</h1>
         <main id="main">
-            <input type="text" id="q" placeholder="Enter country or city name">
-            <button id="fetch">Click</button>
+            <div class="input">
+                <div>
+                    <label for="q">Enter country or city name</label>
+                </div>
+                <input title="Enter country or city name" type="text" id="q" placeholder="Enter country or city name">
+                <button id="fetch">submit</button>
+                <p id="alert-text"></p>
+            </div>
             <div class="box-detail">
-                <h3 id="country-name"></h3>
-                <p id="name"></p>
+                <h3 id="name"></h3>
+                <p id="country-name"></p>
+                <div id="detail">
+
+                </div>
+                <div id="tempBox">
+
+                </div>
+                <p id="time"></p>
             </div>
         </main>
+        <footer>&copy notPesol 2021</footer>
     </div>
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <script src="/javascript/index.js"></script>
 
-    
+
 
 </body>
 
